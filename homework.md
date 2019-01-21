@@ -48,9 +48,9 @@ Use the supplied data as the source of data to answer the questions. Copy the SQ
 5.  The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
     ```
     DELETE FROM
-    	movies
+      movies
     WHERE
-    	title = 'Batman Begins';
+      title = 'Batman Begins';
     ```
 6.  Create a new entry in the 'people' table with the name of one of the instructors.
     ```
@@ -59,9 +59,9 @@ Use the supplied data as the source of data to answer the questions. Copy the SQ
 7.  John Smith has decided to hijack our movie evening, Remove him from the table of people.
     ```
     DELETE FROM
-    	people
+      people
     WHERE
-    	name = 'John Smith';
+      name = 'John Smith';
     ```
 8.  The cinema has just heard that they will be holding an exclusive midnight showing of 'Avengers: Infinity War'!! Create a new entry in the 'movies' table to reflect this.
     ```
@@ -70,11 +70,11 @@ Use the supplied data as the source of data to answer the questions. Copy the SQ
 9.  The cinema would also like to make the Guardians movies a back to back feature. Find out the show time of "Guardians of the Galaxy" and set the show time of "Guardians of the Galaxy 2" to start two hours later.
     ```
     UPDATE
-    	movies
+      movies
     SET
-    	show_time = '00:50'
+      show_time = '00:50'
     WHERE
-    	title = 'Guardians of the Galaxy 2';
+      title = 'Guardians of the Galaxy 2';
     ```
 
 ## Extension
@@ -82,15 +82,17 @@ Use the supplied data as the source of data to answer the questions. Copy the SQ
 1.  Research how to delete multiple entries from your table in a single command.
     ```
     DELETE FROM
-    	movies
+      movies
     WHERE
-    	title in ('Iron Man', 'Iron Man 2', 'Iron Man 3');
-
+      title in ('Iron Man', 'Iron Man 2', 'Iron Man 3');
+    ```
+    ```
     DELETE FROM
       movies
     WHERE
       title LIKE 'Iron%';
-
+    ```
+    ```
     DELETE FROM
       movies
     WHERE
