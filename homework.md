@@ -31,18 +31,20 @@ Use the supplied data as the source of data to answer the questions. Copy the SQ
     SELECT name FROM people;`
 
 3.  Oops! Someone at CodeClan spelled Kimberly's name wrong! Change it to reflect the proper spelling ('Kimberly Clarke' should be 'Kimberly Clark').
-   ```
-   UPDATE
+    ```
+    UPDATE
       people
     SET
       name = 'Kimberly Clark'
     WHERE
       name = 'Kimberly Clarke';
     ```
+
 4.  Return ONLY your name from the 'people' table.
     ```
     SELECT name FROM people WHERE name = 'Eloise Coveny';
     ```
+
 5.  The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
     ```
     DELETE FROM
