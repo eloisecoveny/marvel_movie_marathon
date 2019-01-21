@@ -54,7 +54,7 @@ Use the supplied data as the source of data to answer the questions. Copy the SQ
     ```
 6.  Create a new entry in the 'people' table with the name of one of the instructors.
     ```
-    INSERT INTO people (name) VALUES ('John McCollom');
+    INSERT INTO people (name) VALUES ('John McCollum');
     ```
 7.  John Smith has decided to hijack our movie evening, Remove him from the table of people.
     ```
