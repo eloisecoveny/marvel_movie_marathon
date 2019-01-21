@@ -23,13 +23,13 @@ Use the supplied data as the source of data to answer the questions. Copy the SQ
 ## Questions
 
 1.  Return ALL the data in the 'movies' table.
-    `
-    SELECT * FROM movies;`
-
+    ```
+    SELECT * FROM movies;
+    ```
 2.  Return ONLY the name column from the 'people' table
-    `
-    SELECT name FROM people;`
-
+    ```
+    SELECT name FROM people;
+    ```
 3.  Oops! Someone at CodeClan spelled Kimberly's name wrong! Change it to reflect the proper spelling ('Kimberly Clarke' should be 'Kimberly Clark').
     ```
     UPDATE
